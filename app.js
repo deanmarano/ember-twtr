@@ -15,6 +15,8 @@ Twtr.Tweet = Ember.Model.extend({
   retweet_count: Ember.attr()
 });
 
+Twtr.Tweet.adapter = Ember.FixtureAdapter.create({});
+
 Twtr.Router.map(function() {
   this.resource('tweets', { path: '/' });
 });
